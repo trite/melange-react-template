@@ -3,4 +3,6 @@
 //   <button> {ReasonReact.string("Hello " ++ name ++ "!")} </button>;
 
 [@react.component]
-let make = (~message) => <h1> {React.string(message)} </h1>;
+let make = (~name) => {
+  <h1> {React.string("Greetings " ++ name ++ "!")} </h1>;
+}
